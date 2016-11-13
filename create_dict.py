@@ -12,7 +12,6 @@ def _read_data():
             # if "\RS" in line:
                 # print(line)
             yield generate_tokens.get_tokens("\START "+line.strip()+" \END")
-
     return
 
 
@@ -25,7 +24,7 @@ def get_unique_tokens(tokens_list):
 
 def create_dict():
     """
-    Generates a dictionar of tokens, and considers tokens only which occur atleast 10 times
+    Generates a dictionary of tokens, and considers tokens only which occur atleast 10 times
     Finally creates a list of such tokens
     """
     dict_tokens = {}
